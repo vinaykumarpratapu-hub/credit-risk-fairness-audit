@@ -1,0 +1,27 @@
+{
+  "numeric": [
+    "Duration of Credit (month)",
+    "Credit Amount",
+    "Instalment per cent",
+    "Duration in Current address",
+    "Age (years)",
+    "No of Credits at this Bank",
+    "No of dependents"
+  ],
+  "categorical": [
+    "Account Balance",
+    "Payment Status of Previous Credit",
+    "Purpose",
+    "Value Savings/Stocks",
+    "Length of current employment",
+    "Sex & Marital Status",
+    "Guarantors",
+    "Most valuable available asset",
+    "Concurrent Credits",
+    "Type of apartment",
+    "Occupation",
+    "Telephone",
+    "Foreign Worker"
+  ],
+  "target": "Creditability"
+}

@@ -1,1 +1,57 @@
-
+{
+  "model_comparison": {
+    "logreg": {
+      "f1": 0.801,
+      "roc_auc_single_split": 0.809,
+      "roc_auc_cv_mean": 0.756,
+      "roc_auc_cv_std": 0.032
+    },
+    "xgboost": {
+      "f1": 0.806,
+      "roc_auc_single_split": 0.821,
+      "roc_auc_cv_mean": 0.753,
+      "roc_auc_cv_std": 0.016
+    }
+  },
+  "fairness_audit": {
+    "sex": {
+      "by_group_selection_rate": {
+        "female": 0.5,
+        "male": 0.7011494252873564
+      },
+      "group_counts": {
+        "male": 174,
+        "female": 76
+      },
+      "demographic_parity_difference": 0.201,
+      "equalized_odds_difference": 0.238,
+      "small_sample_warning": false
+    },
+    "age_band": {
+      "by_group_selection_rate": {
+        "25_plus": 0.6851851851851852,
+        "under_25": 0.35294117647058826
+      },
+      "group_counts": {
+        "25_plus": 216,
+        "under_25": 34
+      },
+      "demographic_parity_difference": 0.332,
+      "equalized_odds_difference": 0.295,
+      "small_sample_warning": false
+    },
+    "foreign_worker": {
+      "by_group_selection_rate": {
+        "no": 0.8333333333333334,
+        "yes": 0.6352459016393442
+      },
+      "group_counts": {
+        "yes": 244,
+        "no": 6
+      },
+      "demographic_parity_difference": 0.198,
+      "equalized_odds_difference": 0.234,
+      "small_sample_warning": true
+    }
+  }
+}
